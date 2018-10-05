@@ -1,0 +1,121 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('src/images/Debby.otf');
+}
+@font-face {
+  font-family: variane;
+  src: url('src/images/Variane.ttf');
+}
+
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+
+.deb {
+  font-family: myFirstFont;
+  font-size: 12em;
+  line-height: 1;
+  position:static;
+}
+
+
+.container {
+  display: flex; /* or inline-flex */
+  height: 100%;
+}
+
+.rightTopLine {
+  letter-spacing: .6em;
+  font-family: 'Poppins', sans-serif;
+  margin-top:20%;
+}
+
+.right {
+  background-image: url('src/images/large.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+ 
+  color:white;
+  text-align:center
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+.txtbox {
+  border: none;
+  display: block;
+  margin: 0.4em auto;
+  font-size: 1.5em;
+  width: 9em;
+  text-align:center;
+  color:black;
+  text-align:left;
+}
+
+.label {
+  font-size: 1em;
+  text-align: center;
+  color: darkgrey;
+  top: 0.3em;
+  position: absolute;
+  font-size: 1.5em;
+  left: 2em;
+  transition: all .4s;
+}
+
+.labelActive {
+  font-size: 1em;
+  text-align: center;
+  color: darkgrey;
+  top: 0.1em;
+  position: absolute;
+  font-size: 0.8em;
+  left: 4.1em;
+  transition: all .4s;
+}
+
+#loginTitle {
+  margin-top: 7em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.9em;
+  color: white;
+  width: 10em;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Source Sans Pro', sans-serif;  
+}
+
+.credTextbox {
+  border: solid 1px black;
+  background-color: white;
+  width: 20em;
+  height: 2.5em;
+  max-width: 20em;
+  min-width: 16em;
+  position: relative;
+  margin: 1.5em auto;
+  border-radius: 40px;
+}
+
+@media only screen and (max-width: 811px) {
+  .left {
+    width: 100%;
+    background-image: url('src/images/large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .right{
+    display:none;
+  }
+}

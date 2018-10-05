@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
+<div class="container">
+
+  <div class="left">
+    <div id="loginTitle">User Login</div>
+    <div class="credTextbox">
+
+      <input id="loginUsername" (blur)="loginNameFocus = false" (focus)="loginNameFocus = true" [(ngModel)]="userName" class="txtbox" type="text">      
+      <label class="{{userName.length < 1 && !loginNameFocus ? 'label' : 'labelActive'}}" for="loginUsername">Username</label>
+
+    </div>
+    <div class="credTextbox">
+      <input id="loginPassword" (blur)="passwordFocus = false" (focus)="passwordFocus = true" [(ngModel)]="password" class="txtbox" type="text">
+      <label class="{{password.length < 1 && !passwordFocus ? 'label' : 'labelActive'}}" for="loginPassword">Password</label>
+
+    </div>
+  </div>
+<div class="right">
+  <div class="rightTopLine">WAKE UP,  WE'RE</div>
+  <div class="deb">Dreaming</div>
+</div>
+ </div>
